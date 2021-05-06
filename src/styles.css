@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-image: url('./assets/bg4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+    display: none!important;
+}
+.mat-tab-label {
+    max-width: 15px!important;
+    color: #fff;
+    background-color: #644c4cbd;
+}
+.mat-tab-body {
+    background-color: #fff;
+    height: 350px;
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #ff2b6acf;
+    height: 50px;
+    z-index: -1;
+}
+

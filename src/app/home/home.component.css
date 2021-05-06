@@ -1,0 +1,139 @@
+.home_page {
+    background-color: #ff000040;
+}
+ul.nav-tabs.justify-content-center.nav {
+    padding: 0 141px 0px 120px;
+    height: 39px;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: none;
+}
+ul.nav-tabs.justify-content-center.nav li a {
+    color: #fff;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff!important;;
+    background-color:transparent;
+    border-color: #dee2e6 #dee2e6 #fff;
+    border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-bottom: 10px;
+}
+li.ml-auto.nav-item {
+    padding-top: 9px;
+}
+li.ml-auto.nav-item a {
+    padding: 10px;
+    cursor: pointer;
+}
+li.nav-item {
+    border-right: 1px solid #fff;
+}
+li.nav-item.dropdown {
+    border-right: none;
+}
+li.ml-auto.nav-item {
+    border-right: none;
+}
+.rotate {
+    animation: rotation 10s infinite linear;
+    display: inline-block;
+    margin-left: 20px;
+}
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.rotating_image {
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-left: 10%;
+    color: #0000006e;
+    font-size: 400px;
+}
+
+.secondary_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.secondary_nav li {
+    display: inline;
+}
+.secondary_nav li a{
+    color: #fff;
+    cursor: pointer;
+}
+.secondary_nav {
+    float: right;
+    padding-top: 30px;
+}
+.home_body {
+    margin: 0 135px;
+}
+.logo {
+    color: #fff;
+    font-size: 40px;
+    padding-top: 30px;
+}
+.secondary_nav ul li:first-child {
+    padding: 10px;
+    border: 1px solid #fff;
+}
+.secondary_nav ul li {
+    margin: 10px;
+}
+.book_ticket {
+    margin-top: 10%;
+}
+.book_ticket i.fa {
+    padding-right: 10px;
+}
+.book_ticket ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.book_ticket li {
+    display: inline;
+    padding: 10px;
+}
+.Book_ticket_container {
+    padding: 30px 40px;
+}
+.book_ticket ul li:first-child {
+    background-color: #ff2b6acf;
+    border: none!important;
+    color: #fff;
+    cursor: pointer;
+}
+.book_ticket ul li:last-child {
+    border: 1px solid grey;
+    padding: 9px;
+    cursor: pointer;
+}
+.Book_ticket_container label {
+    color: grey;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #ff2b6acf;
+    border-color: #ff2b6acf;
+}
+.advance {
+    float: right;
+    padding-top: 10px;
+    color: #ff2b6acf;
+}
+.advance a {
+    text-decoration: underline!important;
+    cursor: pointer;
+}
+

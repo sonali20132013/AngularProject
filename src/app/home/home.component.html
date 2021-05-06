@@ -1,0 +1,160 @@
+<div class="header">
+    <ul ngbNav #nav="ngbNav" [activeId]="1" class="nav-tabs justify-content-center">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink>HOME</a>
+      <ng-template ngbNavContent>
+          
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink>FAQS</a>
+      <ng-template ngbNavContent>
+       <p></p>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+        <a ngbNavLink>CONTACTS</a>
+        <ng-template ngbNavContent>
+            <p></p>
+        </ng-template>
+    </li>
+    <li ngbDropdown class="nav-item">
+      <a href (click)="false" class="nav-link" ngbDropdownToggle>USD</a>
+      <div ngbDropdownMenu>
+        <button ngbDropdownItem>Link1</button>
+        <button ngbDropdownItem>Link2</button>
+        <button ngbDropdownItem>Link3</button>
+        <div class="dropdown-divider"></div>
+        <button ngbDropdownItem>Link4</button>
+      </div>
+    </li>
+    <li ngbNavItem class="ml-auto">
+        <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+        <a><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+        <a><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      <ng-template ngbNavContent>
+      </ng-template>
+    </li>
+  </ul>
+</div>
+  <div class="home_body">
+    <div class="row">
+        <div class="col-2">
+            <div class="logo">canvas</div>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-7">
+            <div class="secondary_nav">
+                <ul>
+                    <li><a><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+                    <li><a><i class="fa fa-plane" aria-hidden="true"></i> FLIGHTS</a></li>
+                    <li><a><i class="fa fa-h-square" aria-hidden="true"></i> HOTELS</a></li>
+                    <li><a><i class="fa fa-home" aria-hidden="true"></i> HOLIDAYS</a></li>
+                    <li><a><i class="fa fa-pencil" aria-hidden="true"></i> BLOG</a></li>
+                    <li><a><i class="fa fa-phone" aria-hidden="true"></i> 1800 1051541</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="book_ticket">
+        <div class="row">
+            <div class="col-8">
+                <mat-tab-group>
+                    <mat-tab>
+                      <ng-template mat-tab-label>
+                        <i class="fa fa-plane" aria-hidden="true"></i> FLIGHTS
+                      </ng-template>
+                      <div class="Book_ticket_container">
+                        <form #login="ngForm" novalidate>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h2>BOOK YOUR FLIGHT</h2>
+                                </div>
+                                <div class="col-6">
+                                    <ul>
+                                        <li><a>Domestic</a></li>
+                                        <li><a>International</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="firstName">FROM</label><br>
+                                    <input type="text" name="lastName" class="form-control" ngModel placeholder="Eg. Melbourne, Australia">
+                                </div>
+                                <div class="col-6">
+                                    <label for="firstName">TO</label><br>
+                                    <input type="text" name="lastName" class="form-control" ngModel placeholder="Eg. New york, United States">
+                                </div>
+                            </div>
+                            <pre></pre><pre></pre>
+                            <div class="row">
+                                <div class="col-5">
+                                    <label for="firstName">DEAPRTURE</label><br>
+                                    <input type="text" name="lastName" class="form-control" ngModel placeholder="MM/DD/YYYY">
+                                </div>
+                                <div class="col-5">
+                                    <label for="firstName">RETURN</label><br>
+                                    <input type="text" name="lastName" class="form-control" ngModel placeholder="MM/DD/YYYY">
+                                </div>
+                                <div class="col-2">
+                                    <label for="firstName">ADULTS</label><br>
+                                    <input type="text" name="lastName" class="form-control" ngModel placeholder="2">
+                                </div>
+                            </div>
+                            <pre></pre>
+                            <pre></pre>
+                            <div class="row">
+                                <div class="col-6">
+                                    
+                            <button class="btn btn-primary" type="submit">SEARCH FLIGHTS</button>
+                                </div>
+                                <div class="col-6">
+                                    <div class="advance">
+                                        <a><i>Advance Search</i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                        </div>
+                    </mat-tab>
+                  
+                    <mat-tab>
+                      <ng-template mat-tab-label>
+                        <i class="fa fa-h-square" aria-hidden="true"></i> HOTELS
+                      </ng-template>
+                      HOTELS
+                    </mat-tab>
+                  
+                    <mat-tab>
+                      <ng-template mat-tab-label>
+                        FLIGHTS + HOTELS
+                      </ng-template>
+                  
+                      FLIGHTS + HOTELS
+                    </mat-tab>
+                    <mat-tab>
+                        <ng-template mat-tab-label>
+                            <i class="fa fa-home" aria-hidden="true"></i> HOLIDAYS
+                        </ng-template>
+                    
+                        HOLIDAYS
+                      </mat-tab>
+                  </mat-tab-group>
+            </div>
+            <div class="col-4">
+                <div class="rotating_image">
+                    
+                     <div class="rotate">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                     </div>
+                         
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
